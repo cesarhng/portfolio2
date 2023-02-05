@@ -1,0 +1,78 @@
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+
+    font-weight: 400, 500 e 700;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+  
+body{
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+
+    margin: 0;
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas: 
+        "1 2"
+        "3 3";
+
+    grid-template-rows: 3fr 4vh;
+    grid-template-columns: 1fr 2fr;
+}
+
+header{
+    grid-area: "1";
+
+    text-align: center;
+    /* background-color: red; */
+  }
+
+article{
+    grid-area: "2";
+    /* background-color: green; */
+}
+
+footer{
+    grid-area: "3";
+    /* background-color: orange; */
+}
+
+.profile img{
+    border-radius: 50%;
+    border: 3px solid white;
+
+    width: 50%;
+}
+
+.profile, .links, .tech, .exp, .educ{
+    background-color: var(--bg-cards);
+    border-radius: 1em;
+    margin: 1em 2em;
+    padding: 1em;
+}
+
+.projectsTitle, .project1, .project2, .postsTitle, .posts{
+    background-color: var(--bg-cards);
+    border-radius: 1em;
+    margin: 1em 2em 1em 0;
+    padding: 1em;
+}
+
+.links ul{
+    list-style: none;
+    text-align: left;
+}
+
+.tech p{
+    background-color: var(--bg-techs);
+    color: var(--bg-cards);
+    
+    border-radius: 1em;
+
+    font-weight: 500;
+}
+
